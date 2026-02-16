@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main()
+{
+    std :: cout << "digite um número:";
+    
+    int x{};
+    std :: cin >> x;
+    
+    std :: cout << "seu número é" << x << "\n";
+    return 0;
+}
+
+/* esse codigo demonstra duas funcionalidades da biblioteca iostream, 
+o cout que lé valores e o cin que pede valores, ele seria o print e o 
+input, na iostream tem mais algumas funcionalidades  que são o end, que 
+é uma quebra de linha igual ao \n que utilizado entres aspas no c++ "\n" 
+a diferença do end pro outro é que ele limpa o buffer e depois faz a 
+quebra de linha pois o \n não limpa o buffer do cout *\
