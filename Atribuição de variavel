@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+    int width;
+    width = 5;
+    
+    std :: cout << width;
+    
+    width = 7;
+    
+    std :: cout << width;
+}
+
+/* esse codigo demonstra a utilização da varriavel width, deppois colocamos dois valores 
+   o primeiro é o 5, depois ja damos o print, so que o print em c++ diferente de python 
+   precisa do std :: cout << que é o printi do c++ chamado da biblioteca iostream, depois
+   meio que rescrevemos o valor da variavel de 5 para 7 e novamente demos print, o resultado
+   ira aparecer 57, pois primeiro ele leu a variiavel como 5 e depois como 7
+*|
