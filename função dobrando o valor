@@ -1,0 +1,28 @@
+#include <iostream>
+
+int valor_inteiro()
+{
+    std :: cout << "Digite um número inteiro: ";
+    int entrada{};
+    std :: cin >> entrada;
+    
+    return entrada;
+}
+
+void valor_dobro(int num)
+{
+    std :: cout << "O dobro do número inteiro " << num << " é: " << num * 2 << '\n';
+}
+
+int main()
+{
+    valor_dobro(valor_inteiro());
+    
+    return 0;
+}
+
+/* é interresante a ideia de colocar na main apenas uma função,
+    mas tenho que levar em conta a montagem inteira do processo,
+    estou burrando muito em alguns aspectos, esqueci de colocar o 
+    ponto e virgula, e tenho que melhorar na parte de nomeação de 
+    variaveis e funções*/
