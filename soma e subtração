@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main()
+{
+    std :: cout << "Escreva o primeiro número: ";
+    int num1{};
+    std :: cin >> num1;
+
+    std :: cout << "Escreva o segundo número: ";
+    int num2{};
+    std :: cin >> num2;
+    
+    std :: cout << "A soma do número " << num1 << " com o número " << num2 << " é: " << num1 + num2 << '\n';
+    std :: cout << "A subtração do número " << num1 << " com o número " << num2 << " é: " << num1 - num2 << '\n';
+    
+    return 0;
+}
+
+/* esse exercicio foi interresante, eu ia fazer a soma e a 
+subtração igual ao exercicio de programação, mas tentei fazer 
+de uma maneira diferente e talvez, so talvez mais organizado
+demonstrando melhor os valores escolhidos e melhorando a posição 
+do print, variavel e input*/
