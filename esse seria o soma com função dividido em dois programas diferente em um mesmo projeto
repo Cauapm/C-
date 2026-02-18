@@ -1,0 +1,40 @@
+main.cpp 
+
+#include <iostream>
+
+int ler_numero();
+void resposta(int num);
+
+int main()
+{
+    int valor1{ler_numero()};
+    int valor2{ler_numero()};
+    resposta (valor1 + valor2);
+    
+    return 0;
+}
+
+dados.cpp
+
+#include <iostream>
+
+int ler_numero()
+{
+    std :: cout << "Escreva um número: ";
+    int num{};
+    std :: cin >> num;
+    
+    return num;
+}
+
+void resposta(int num)
+{
+    std :: cout << "A soma dos números é: " << num << '\n';
+}
+
+
+
+/* gostei de saber que o compilador web que estou usando é capaz
+    de conectar duas funções em programas diferente de um mesmo 
+    projeto, saber que isso é capaz me deixa muito feliz, pois me
+    permite dar continuidade no aprendizado*/
