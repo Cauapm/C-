@@ -1,0 +1,41 @@
+main.cpp
+
+#include "dados.h"
+
+int main()
+{
+    int valor1{ler_numero()};
+    int valor2{ler_numero()};
+    resposta (valor1 + valor2);
+    
+    return 0;
+}
+
+dados.cpp
+
+#include "dados.h"
+#include <iostream>
+
+int ler_numero()
+{
+    std :: cout << "Escreva um número: ";
+    int num{};
+    std :: cin >> num;
+    
+    return num;
+}
+
+void resposta(int num)
+{
+    std :: cout << "A soma dos numeros é: " << num << '\n';
+}
+
+dados.h
+
+#ifndef DADOS_H
+#define DADOS_H
+
+int ler_numero();
+void resposta(int num);
+
+#endif 
