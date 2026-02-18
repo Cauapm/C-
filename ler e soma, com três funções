@@ -1,0 +1,35 @@
+#include <iostream>
+
+int ler_numero()
+{
+    std :: cout << "Escreva um número: ";
+    int num{};
+    std :: cin >> num;
+    
+    return num;
+}
+
+void resposta(int num)
+{
+    std :: cout << "A soma dos números é: " << num << '\n';
+}
+
+int main()
+{
+    int valor1{ler_numero()};
+    int valor2{ler_numero()};
+    resposta (valor1 + valor2);
+    
+    return 0;
+}
+
+
+/* Achei que eu já tava com um nivel basico bom, ai tentei 
+   fazer uma coisa mais avançada, achei que era a maneira correta,
+   na primeira função coloquei pra chamar os dois valores, mas parece
+   que o int não aceita isso, então fui ver a resposta do exercicio 
+   pra ver a maneira correta, foi meio que uma mistura de quase todos
+   os codigos que fiz, ela mistura funções e variavei, achei bom, mas 
+   inconsientemente tentei dificultar as coisas, possivelmente seria 
+   uma método melhor, mas não tenho o conhecimento para fazer um 
+   programa nesse nivel ainda, talvez no futuro*/
