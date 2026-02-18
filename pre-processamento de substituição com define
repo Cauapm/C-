@@ -1,0 +1,23 @@
+#include <iostream>
+
+#define Meu_nome "Cauã"
+
+int main()
+{
+    std :: cout << "Meu nome é: " << Meu_nome << '\n';
+    
+    return 0;
+}
+
+/*  fiquei com vontade de fazer esse exemplo quando vi no curso
+    , achei ele interresante, pois é um metodo que garante ser
+    possivel realizar a criação de um tipo de variavel com define
+    , achei interresante, pois pode ser um possivel metodo de utilização
+    pro futuro, talvez, pois não aprendi ainda como usar classes em c++
+    e também não entendi ainda como usar 2 arquivos no mesmo projeto,
+    ficou muito confuso pois no python eu dou import no arquivo para
+    chamer ele, no c++ eu apenas tenho que deixar os arquivos na 
+    mesma página e se eu chamar ele, ele funcionaria, e o mais estranho
+    é que se eu criar a mesma variavel com um nome igual nos dois ele da 
+    erro e pede pra mudar o nome de uma das variaveis ou funções se não 
+    me engano, isso ainda não entrou na minha cabeça*/
