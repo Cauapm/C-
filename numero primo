@@ -1,0 +1,37 @@
+#include <iostream>
+
+bool numero_primo(int x)
+{
+    if (x == 2)
+        return true;
+        
+    else if (x == 3)
+        return true;
+        
+    else if (x == 5)
+        return true;
+    
+    else if (x == 7)
+        return true;
+    
+    return false;
+}
+
+int main()
+{
+    std :: cout << "Digite um número de 1 a 9: ";
+    int x{};
+    std :: cin >> x;
+    
+    if(numero_primo(x))
+        std :: cout <<"O número escolhido é primo";
+    else
+        std :: cout <<"O número escolhido não é primo";
+        
+    return 0;
+}
+
+/* esse foi interessante, fiquei um tempo em duvida do porque 
+o codigo não estava funcionando, depois descobri que se você
+for usar o else fora da main, tera que escrever else if, fiquei 
+bastante tempo tentando descobrir o problema de funcionamento*/
