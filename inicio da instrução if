@@ -9,6 +9,9 @@ int main()
     if (x==0)
         std :: cout << "O número inteiro é 0\n";
         
+    if (x!=0)
+        std :: cout << "O número inteiro é diferente de 0\n";
+        
     return 0;
 }
 
