@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main()
+{
+    std :: cout << "Digite um número inteiro: ";
+    int x{};
+    std :: cin >> x;
+    
+    if (x==0)
+        std :: cout << "O número é igual a 0";
+    else
+        std :: cout << "O número é diferente de 0";
+        
+    return 0;
+}
