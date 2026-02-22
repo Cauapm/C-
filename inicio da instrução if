@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main()
+{
+    std :: cout << "Digite um número inteiro: ";
+    int x{};
+    std :: cin >> x;
+    
+    if (x==0)
+        std :: cout << "O número inteiro é 0\n";
+        
+    return 0;
+}
+
+/* O inicio da utilização de if, uma das coisas mais
+importantes na programação, pois é uma das principais 
+formas de fazer condições  */
