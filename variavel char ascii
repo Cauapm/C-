@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main(){
+    char ch1{'a'};
+    std :: cout << ch1;
+    
+    char ch2{98};
+    std :: cout << ch2;
+    
+    return 0;
+}
+
+/* Uma forma interresante de se obter carteres
+    ,números e simbolos especiais, usando a 
+    tabela ascii, temos um lugar para realmente
+    'obter' dados, chamando ele pela numeração ou 
+    descubrir sua numeração chamando ele*/
