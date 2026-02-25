@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main(){
+    std :: cout << "Digite alguma coisa: ";
+    
+    char ch{};
+    std :: cin >> ch; 
+    std :: cout << "Você digitou a tecla "<< ch << '\n';
+    
+    return 0;
+}
+
+/* uma forma diferente de armazenar os dados que foram
+    digitados no teclado e 'armazenados' no programa */
