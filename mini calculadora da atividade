@@ -1,0 +1,49 @@
+#include <iostream>
+
+double calculadorazinha()
+{
+    std :: cout << "Digite um número decimal: ";
+    double num{};
+    std :: cin >> num;
+    
+    return num;
+}
+
+char operadores()
+{
+    std :: cout << "Escolha um operador, entre eles, + , -, *, /: ";
+    char operador{};
+    std :: cin >> operador;
+    
+    return operador;
+}
+
+void resultadocalc(double valor1, double valor2, char operacao)
+{
+    double resultado{};
+    
+    if(operacao == '+')
+        resultado = valor1 + valor2;
+    else if(operacao == '-')
+        resultado = valor1 - valor2;
+    else if(operacao == '*')
+        resultado = valor1 * valor2;
+    else if(operacao == '/')
+        resultado = valor1 / valor2;
+    else
+        return;
+        
+    std :: cout << valor1 << ' ' << operacao << ' ' << valor2 <<  " é: " << resultado << '\n';
+ }
+
+int main()
+{
+    double valor1{calculadorazinha()};
+    double valor2{calculadorazinha()};
+    
+    char operacao{operadores()};
+    
+    resultadocalc(valor1, valor2, operacao);
+    
+    return 0;
+}
