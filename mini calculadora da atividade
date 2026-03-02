@@ -1,49 +1,49 @@
-#include <iostream>
+#include <iostream> 
 
-double calculadorazinha()
+double numeros()
 {
-    std :: cout << "Digite um número decimal: ";
-    double num{};
-    std :: cin >> num;
+    std :: cout << "Escreva um número decimal: ";
+    double numero;
+    std :: cin >> numero;
     
-    return num;
+    return numero;
 }
 
 char operadores()
 {
-    std :: cout << "Escolha um operador, entre eles, + , -, *, /: ";
+    std :: cout << "Escolha um operador, o de soma +, subtração -, multiplicação * e divisão / : ";
     char operador{};
     std :: cin >> operador;
     
     return operador;
 }
 
-void resultadocalc(double valor1, double valor2, char operacao)
+void calcular(double valor1, char operacao, double valor2)
 {
     double resultado{};
     
-    if(operacao == '+')
+    if (operacao == '+')
         resultado = valor1 + valor2;
-    else if(operacao == '-')
+    else if (operacao == '-')
         resultado = valor1 - valor2;
-    else if(operacao == '*')
-        resultado = valor1 * valor2;
-    else if(operacao == '/')
+    else if (operacao == '*')
+        resultado = valor1 + valor2;
+    else if (operacao == '/')
         resultado = valor1 / valor2;
     else
         return;
-        
-    std :: cout << valor1 << ' ' << operacao << ' ' << valor2 <<  " é: " << resultado << '\n';
- }
+    
+    std :: cout << "O resultado da operação é: " << valor1 << ' ' << operacao << ' ' << valor2 << ' ' << resultado << "é =" <<'\n';
+}
 
 int main()
 {
-    double valor1{calculadorazinha()};
-    double valor2{calculadorazinha()};
+    double valor1{numeros()};
+    double valor2{numeros()};
     
     char operacao{operadores()};
     
-    resultadocalc(valor1, valor2, operacao);
+    calcular(valor1, operacao, valor2);
     
     return 0;
 }
