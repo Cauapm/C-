@@ -1,0 +1,52 @@
+#include <iostream>
+
+double altura_torre()
+{
+    std :: cout << "Qual é a altura da torre em metros: ";
+    double torre;
+    std :: cin >> torre;
+    
+    return torre;
+}
+
+double calcular_queda (double altura_torre, int segundos)
+{
+    const double gravidade {9.8};
+    
+    double distancia_queda (gravidade * (segundos * segundos)/2);
+    double queda_bola (altura_torre - distancia_queda);
+    
+    if (queda_bola < 0.0)
+        return 0.0;
+    
+    return queda_bola;
+}
+
+void calc_altura_bola(double queda_bola, int segundos)
+{
+    if (queda_bola > 0.0)
+        std :: cout << "Em " << segundos << " segundos, a altura da bola está em " << queda_bola << " metros.\n";
+    else
+        std :: cout << "Em " << segundos << " segundos, a bola caiu no chão.\n";
+}
+
+void calc_queda_bola(double altura_torre, int segundos)
+{
+    double queda_bola{calcular_queda(altura_torre, segundos)};
+    calc_altura_bola(queda_bola, segundos);
+}
+
+int main()
+{
+    double altura{altura_torre()};
+    
+    calc_queda_bola(altura, 0);
+    calc_queda_bola(altura, 1);
+    calc_queda_bola(altura, 2);
+    calc_queda_bola(altura, 3);
+    calc_queda_bola(altura, 4);
+    calc_queda_bola(altura, 5);
+
+    
+    return 0;
+}
