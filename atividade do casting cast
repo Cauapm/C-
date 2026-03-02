@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main()
+{
+    std :: cout << "Digite um caracter: ";
+    char ch{};
+    std :: cin >> ch;
+    
+    std :: cout << "Você digitou " << ch << " ,que tem o codigo ASCII " << static_cast<int>(ch) << '\n';
+    
+    return 0;
+}
