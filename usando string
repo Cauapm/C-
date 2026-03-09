@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+    std :: string name {"Cauã"};
+    std :: cout << name << '\n';
+    
+    name = {"Fernando"};
+    std :: cout << name << '\n';
+
+    name = {"Vitor"};
+    std :: cout << name << '\n';
+
+    
+    return 0;
+}
