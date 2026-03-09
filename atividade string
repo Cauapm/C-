@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string> 
+
+std :: string pegar_nome()
+{
+    std :: cout << "Escreva seu nome completo: ";
+    std :: string name{};
+    std :: getline(std :: cin >> std :: ws, name);
+
+    return name;
+}
+
+int pegar_idade()
+{
+    std :: cout << "Digite sua idade: ";
+    int idade;
+    std :: cin >> idade;
+    
+    return idade;
+}
+
+void resultado(std :: string name, int idade)
+{
+    std :: cout << "Seu nome completo é " << name << '\n'
+                << " Sua idade atual é " << idade << '\n'
+                << " A quantidade de caracteres que seu nome e sua idade tem é: " 
+                << idade + static_cast<int>(name.length()) << '\n';
+}
+
+int main()
+{
+   
+    std :: string nome{pegar_nome()};
+    int idade_atual{pegar_idade()};
+    
+    resultado(nome, idade_atual);
+    
+    return 0;
+}
+
+// muita duvida, tem coisa que não faz sentido
