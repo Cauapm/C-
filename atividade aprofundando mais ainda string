@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+
+std :: string Nome()
+{
+    std :: cout << "Escreva seu nome nome_completo: ";
+    std :: string nome{};
+    std :: getline(std :: cin >> std :: ws, nome);
+    
+    return nome;
+}
+
+int Idade(std :: string nome)
+{
+    std :: cout << "A idade de " << nome << " é: ";
+    int idade{};
+    std :: cin >> idade;
+    
+    return idade;
+}
+
+void maior_idade(std :: string nome_completo1, int idade_pessoa1, std :: string nome_completo2, int idade_pessoa2)
+{
+    if (idade_pessoa1 > idade_pessoa2){
+        std :: cout << nome_completo1 << "(" << idade_pessoa1 << " anos) é mais velho que " << nome_completo2 << "( " << idade_pessoa2 << " ).";
+    }
+    else if (idade_pessoa1 < idade_pessoa2){
+        std :: cout << nome_completo2 << "(" << idade_pessoa2 << " anos) é mais velho que " << nome_completo1 << "( " << idade_pessoa1 << " ).";
+    }
+    else{
+        std :: cout << "Os dois tém a mesma idade.";
+    }
+    
+}
+
+int main()
+{
+    std :: string nome_completo1{Nome()};
+    int idade_pessoa1{Idade(nome_completo1)};
+    
+    std :: string nome_completo2{Nome()};
+    int idade_pessoa2{Idade(nome_completo2)};
+    
+    maior_idade(nome_completo1, idade_pessoa1, nome_completo2, idade_pessoa2);
+    
+    return 0;
+}
