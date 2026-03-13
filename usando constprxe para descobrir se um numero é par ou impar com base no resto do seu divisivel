@@ -1,0 +1,29 @@
+#include <iostream>
+
+int Numero()
+{
+    std :: cout <<"Digite um numero inteiro: ";
+    int numero;
+    std :: cin >> numero;
+    
+    return numero;
+}
+
+constexpr bool par(int numero)
+{
+    return (numero % 2) == 0;
+}
+
+int main()
+{
+    int pedir_numero{Numero()};
+    
+    if (par(pedir_numero)){
+        std :: cout << "É par";
+    }
+    else{
+        std :: cout << "É impar";
+    }
+    
+    return 0;
+}
